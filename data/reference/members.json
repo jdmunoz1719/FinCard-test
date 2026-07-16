@@ -1,0 +1,7 @@
+[
+  { "memberId": "MEM001", "memberName": "Ana García" },
+  { "memberId": "MEM002", "memberName": "Carlos López" },
+  { "memberId": "MEM003", "memberName": "María Torres" },
+  { "memberId": "MEM004", "memberName": "Pedro Ruiz" },
+  { "memberId": "MEM005", "memberName": "Laura Díaz" }
+]

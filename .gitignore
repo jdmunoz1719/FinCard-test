@@ -1,0 +1,12 @@
+.claude
+node_modules
+especificacion-hexagonal.md
+TASKS.MD
+storage/*
+docs/DEPLOYMENT.md
+dist
+*.log
+.git
+
+fincard-deploy-key
+fincard-deploy-key.pub

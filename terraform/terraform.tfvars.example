@@ -1,0 +1,9 @@
+aws_region       = "us-east-1"
+project_name     = "fincard-test"
+instance_type    = "t3.micro"
+allowed_ssh_cidr = "0.0.0.0/0" # recomendado: reemplazar por "TU_IP/32"
+
+ssh_public_key = "ssh-ed25519 AAAA... tu-clave-publica-aqui"
+
+github_repo_url = "https://github.com/tu-usuario/FinCard-test.git"
+github_branch   = "main"

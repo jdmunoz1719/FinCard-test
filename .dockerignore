@@ -1,0 +1,6 @@
+.claude
+node_modules
+dist
+storage
+*.log
+.git
