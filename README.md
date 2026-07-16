@@ -25,7 +25,7 @@ npm start
 Otros comandos que vas a usar seguido:
 
 ```bash
-npm test          # corre toda la suite (93 tests)
+npm test          # corre toda la suite (101 tests)
 npm run typecheck  # solo TypeScript, sin compilar
 ```
 
@@ -36,7 +36,7 @@ El puerto y el host son configurables con las variables de entorno `PORT` y
 un archivo, y si en algún momento querés arrancar de cero simplemente la
 borrás.
 
-### Con Docker, si preferís no instalar Node
+### Con Docker
 
 ```bash
 docker compose up --build
@@ -103,14 +103,11 @@ graph TB
     UC2 --> PORTS
     UC3 --> PORTS
     CTRL --> MAP
-    PORTS -.lo implementa.-> STORAGE
-    PORTS -.lo implementa.-> CATALOG
-    PORTS -.lo implementa.-> REPO
-    PORTS -.lo implementa.-> PREPO
+    PORTS -. lo implementa .-> STORAGE
+    PORTS -. lo implementa .-> CATALOG
+    PORTS -. lo implementa .-> REPO
+    PORTS -. lo implementa .-> PREPO
 ```
-
-¿Y esto en la práctica qué me da, más allá de que "se vea prolijo"? Dos cosas
-muy concretas:
 
 1. **El día que haya que ir a AWS real, el cambio es quirúrgico.**
    `LocalFileStorageRepository` se reemplaza por un adapter con
@@ -153,6 +150,4 @@ src/
   shared/           # utilidades sin opinión de negocio (Result, constantes, fechas).
 ```
 
-Documenté las decisiones más discutibles (y hay varias el enunciado deja
-espacio a interpretación en más de un punto) en `docs/ADR.md`, por si querés
-ver el razonamiento completo detrás de cada una.
+Documenté las decisiones en `docs/ADR.md`.
